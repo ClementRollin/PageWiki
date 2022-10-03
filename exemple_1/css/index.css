@@ -1,0 +1,84 @@
+body {
+    margin: 0px;
+    font-size: 20px;
+    font-family: 'Futura PT';
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titre {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.titre span {
+    font-size: 25px;
+    color: blue;
+}
+
+.sous_titre {
+    width: 75%;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.separation {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border: 1px aqua solid;
+    width: 50%;
+}
+
+.content {
+    margin-top: 20px;
+    width: 75%;
+    text-align: left;
+}
+
+table {
+    width: 50%;
+}
+
+.bouton {
+    margin-bottom: 50px;
+}
+
+.bouton span {
+    color: black;
+}
+
+a {
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+a span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+a span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -50px;
+    transition: 0.5s;
+}
+
+a:hover span {
+    padding-right: 35px;
+}
+
+a:hover span:after {
+    opacity: 1;
+    right: 0;
+}
